@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifiVR.Plugins", "NotifiVR.Plugins.csproj", "{3835978B-A6C1-162B-907D-8C1E1E8A771C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifiVR.Editor.Plugins", "NotifiVR.Editor.Plugins.csproj", "{4FBD535E-F54E-FDE3-497E-B20E06C61992}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3835978B-A6C1-162B-907D-8C1E1E8A771C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3835978B-A6C1-162B-907D-8C1E1E8A771C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3835978B-A6C1-162B-907D-8C1E1E8A771C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3835978B-A6C1-162B-907D-8C1E1E8A771C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBD535E-F54E-FDE3-497E-B20E06C61992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBD535E-F54E-FDE3-497E-B20E06C61992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBD535E-F54E-FDE3-497E-B20E06C61992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBD535E-F54E-FDE3-497E-B20E06C61992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
