@@ -30,12 +30,21 @@ public class NotificationManager : MonoBehaviour {
 
 	public void Update (){
 		// Listen for notifications
-		if (Input.GetKeyDown("space")) {
-			if (notifierObjMap.ContainsKey(NotificationType.PHONE_INCOMING_CALL)) {
-				List<Notifier> notifierList = notifierObjMap[NotificationType.PHONE_INCOMING_CALL];
+		if (Input.GetKeyDown ("space")) {
+			if (notifierObjMap.ContainsKey (NotificationType.PHONE_INCOMING_CALL)) {
+				List<Notifier> notifierList = notifierObjMap [NotificationType.PHONE_INCOMING_CALL];
 				for (int i = 0; i < notifierList.Count; i++) {
-					if (notifierList[i].CanHandle (NotificationType.PHONE_INCOMING_CALL)) {
-						notifierList[i].TriggerNotification (NotificationType.PHONE_INCOMING_CALL);
+					if (notifierList [i].CanHandle (NotificationType.PHONE_INCOMING_CALL)) {
+						notifierList [i].TriggerNotification (NotificationType.PHONE_INCOMING_CALL);
+					}
+				}
+			}
+		} else if (Input.GetKeyDown ("n")) {
+			if (notifierObjMap.ContainsKey (NotificationType.PHONE_TEXT_MESSAGE)) {
+				List<Notifier> notifierList = notifierObjMap [NotificationType.PHONE_TEXT_MESSAGE];
+				for (int i = 0; i < notifierList.Count; i++) {
+					if (notifierList [i].CanHandle (NotificationType.PHONE_TEXT_MESSAGE)) {
+						notifierList [i].TriggerNotification (NotificationType.PHONE_TEXT_MESSAGE);
 					}
 				}
 			}

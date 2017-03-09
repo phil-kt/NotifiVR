@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/NotifyVR/Scenes/boothPlusPhoneOverlayVR.unity
+  isLoaded: 1
+  isActive: 1

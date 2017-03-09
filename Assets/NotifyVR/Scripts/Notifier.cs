@@ -34,13 +34,11 @@ public abstract class Notifier: MonoBehaviour {
 		return notificationTypeMap.ContainsKey (notificationType);
 	}
 
-	public virtual void TriggerNotification(NotificationType notificationType) {
-	}
+	public abstract void TriggerNotification (NotificationType notificationType);
 
-	public virtual void DismissNotification(NotificationType notificationType) {
-	}
+	public abstract void DismissNotification (NotificationType notificationType);
 
-	public virtual void DismissAllNotifications() {
+	public void DismissAllNotifications() {
 	}
 
 	public List<NotificationType> getNotificationTypes() {

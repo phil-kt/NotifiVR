@@ -10,6 +10,9 @@ public class SmartWatchNotifier : Notifier{
 		case NotificationType.PHONE_INCOMING_CALL:
 			Debug.Log ("received phone call notification");
 			break;
+		case NotificationType.PHONE_TEXT_MESSAGE:
+			Debug.Log ("received phone call notification");
+			break;
 		}
 			
 		notificationTypeMap [notificationType].hapticOutput.TriggerPulse (0, 4000);
@@ -21,5 +24,8 @@ public class SmartWatchNotifier : Notifier{
 		var dcolor = displayObject.GetComponent<Renderer> ().material.color;
 		dcolor = new Color (dcolor.r, dcolor.g, dcolor.b, .9f);
 		displayObject.GetComponent<Renderer>().material.color = dcolor;
+	}
+
+	public override void DismissNotification (NotificationType notificationType) {
 	}
 }
