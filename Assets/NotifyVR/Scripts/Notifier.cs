@@ -4,12 +4,9 @@ using UnityEngine;
 
 [System.Serializable]
 public abstract class Notifier: MonoBehaviour {
-	[SerializeField] public GameObject objectPrefab;
 	[SerializeField] public List<NotificationBehavior> notificationBehavior = new List<NotificationBehavior>();
 
 	protected Dictionary<NotificationType, NotificationBehavior> notificationTypeMap;
-	protected GameObject displayObject;
-
 	string metadata; // TODO: This should potentially be changed to a different datatype.
 
 	public void Awake() {
@@ -22,13 +19,6 @@ public abstract class Notifier: MonoBehaviour {
 			}
 		}
 
-		displayObject = Instantiate (objectPrefab);
-		displayObject.transform.parent = this.gameObject.transform;
-		displayObject.transform.position = this.gameObject.transform.position;
-		Vector3 cameraPosition = Camera.main.transform.position;
-
-		displayObject.transform.localPosition = Vector3.MoveTowards (displayObject.transform.localPosition, cameraPosition, this.gameObject.transform.localScale.z);
-		displayObject.SetActive (false);
 	}
 	public bool CanHandle(NotificationType notificationType) {
 		return notificationTypeMap.ContainsKey (notificationType);

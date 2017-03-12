@@ -1,8 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NotifyVR\Scripts\SmartWatchNotifier.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NotifyVR\Scripts\Output\SpawnedObjectNotifier.cs">
     <Files>
-      <File FileName="Assets\NotifyVR\Scripts\SmartWatchNotifier.cs" Line="21" Column="3" />
+      <File FileName="Assets\NotifyVR\Scripts\SmartWatchNotifier.cs" Line="11" Column="45" />
+      <File FileName="Assets\NotifyVR\Scripts\NotificationManager.cs" Line="47" Column="80" />
+      <File FileName="Assets\NotifyVR\Scripts\Notifier.cs" Line="27" Column="1" />
+      <File FileName="Assets\NotifyVR\Scripts\Output\SpawnedObjectNotifier.cs" Line="20" Column="28" />
+      <File FileName="Assets\NotifyVR\Scripts\ControllerLockedNotifier.cs" Line="5" Column="64" />
+      <File FileName="Assets\NotifyVR\Scripts\PhoneOverlayNotifier.cs" Line="15" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

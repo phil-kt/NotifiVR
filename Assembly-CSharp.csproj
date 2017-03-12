@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\NotifyVR\PhoneOverlay\Scripts\ViveSwipeDetector.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\ControllerLockedNotifier.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\NotificationBehavior.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\NotificationManager.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\NotificationType.cs" />
@@ -56,8 +57,10 @@
      <Compile Include="Assets\NotifyVR\Scripts\Output\Output.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\OutputEditor.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\VisualOutput.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\PhoneOverlayNotifier.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Priority.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\SmartWatchNotifier.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\SpawnedObjectNotifier.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
