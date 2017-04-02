@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -47,28 +47,33 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\NotifyVR\PhoneOverlay\Scripts\ViveSwipeDetector.cs" />
-     <Compile Include="Assets\NotifyVR\Scripts\ControllerLockedNotifier.cs" />
-     <Compile Include="Assets\NotifyVR\Scripts\NotificationBehavior.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\NotifyVR\Scenes\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\HapticSource.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\Models\Model.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\NotificationManager.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\NotificationObjects\ControllerLockedNotificationObject.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\NotificationObjects\NotificationObject.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\NotificationObjects\PhoneOverlayNotificationObject.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\NotificationObjects\SmartWatchNotificationObject.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\NotificationObjects\SpawnedObjectNotificationObject.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\NotificationType.cs" />
-     <Compile Include="Assets\NotifyVR\Scripts\Notifier.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\AudioOutput.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\HapticOutput.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\Output\InteractionControlType.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\Output.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\Output\OutputBehaviors\AudioOutputBehavior.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\Output\OutputBehaviors\HapticOutputBehavior.cs" />
+     <Compile Include="Assets\NotifyVR\Scripts\Output\OutputBehaviors\VisualOutputBehavior.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\OutputEditor.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Output\VisualOutput.cs" />
-     <Compile Include="Assets\NotifyVR\Scripts\PhoneOverlayNotifier.cs" />
      <Compile Include="Assets\NotifyVR\Scripts\Priority.cs" />
-     <Compile Include="Assets\NotifyVR\Scripts\SmartWatchNotifier.cs" />
-     <Compile Include="Assets\NotifyVR\Scripts\SpawnedObjectNotifier.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -403,6 +408,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\NotifyVR\Watch\Basic Metal Texture Pack\readme.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
@@ -439,6 +445,7 @@
      <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\NotifyVR\Watch\prototype_textures\readme.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
